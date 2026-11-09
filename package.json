@@ -1,0 +1,29 @@
+{
+  "name": "radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 4747",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1 -p 4747",
+    "pipeline": "tsx src/pipeline/run.ts",
+    "digest": "tsx src/pipeline/run.ts --digest-only",
+    "library": "tsx src/pipeline/library.ts",
+    "learn": "tsx src/pipeline/learn.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fast-xml-parser": "5.12.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
